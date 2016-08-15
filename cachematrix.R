@@ -1,0 +1,22 @@
+a <- matrix(nrow=3,sample(1:9, 9),ncol=3)
+library(MASS)
+
+makeCacheMatrix <- function (inputMTX){ # the function code
+    Matrix <- solve(a) # calculating the inverse of the matrix
+    cacheSolve <<- Matrix 
+    return(cacheSolve)  # returning the answer, the inverse matrix
+}
+
+mtxINV <- makeCacheMatrix(a) 
+## Return a matrix that is the inverse of 'x'
+
+findDeterminant <- function(inputDAT){
+    det(inputDAT)
+}
+
+det(a)
+solve(a)
+
+setmean <- function(makeCacheMatrix) m <<- makeCacheMatrix
+return(m)
+del=m
